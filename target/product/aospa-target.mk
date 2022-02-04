@@ -70,6 +70,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
 
+# Optimize everything for preopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     ParanoidSystemUI
