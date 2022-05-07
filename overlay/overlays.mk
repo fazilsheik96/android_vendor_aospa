@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
     IconShapeVesselOverlay \
     ParanoidLauncherOverlay \
     PermissionControllerOverlay \
-    OpenDeltaOverlay
+    OpenDeltaOverlay \
+    KeyboardNoNavigationBarOverlay
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static
