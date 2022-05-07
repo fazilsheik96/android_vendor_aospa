@@ -68,7 +68,8 @@ PRODUCT_PACKAGES += \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
     ParanoidLauncherOverlay \
-    OpenDeltaOverlay
+    OpenDeltaOverlay \
+    KeyboardNoNavigationBarOverlay
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aospa/overlay/static
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospa/overlay/static
