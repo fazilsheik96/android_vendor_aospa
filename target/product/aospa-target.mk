@@ -73,6 +73,10 @@ DONT_DEXPREOPT_PREBUILTS := true
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
+# Compile SystemUI on device with `speed`.
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.systemuicompilerfilter=speed
+
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     ParanoidSystemUI
