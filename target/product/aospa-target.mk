@@ -58,6 +58,10 @@ $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 PRODUCT_PACKAGES += \
     OmniJaws \
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
