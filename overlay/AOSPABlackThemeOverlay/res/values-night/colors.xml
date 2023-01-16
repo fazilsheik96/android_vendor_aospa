@@ -43,4 +43,8 @@
     <color name="system_neutral2_800">#202020</color>
     <color name="system_neutral2_900">#000000</color>
     <color name="system_neutral2_1000">#000000</color>
+
+    <color name="system_accent1_1000">#ff000000</color>
+    <color name="system_accent2_1000">#ff000000</color>
+    <color name="system_accent3_1000">#ff000000</color>
 </resources>
