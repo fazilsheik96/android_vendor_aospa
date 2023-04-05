@@ -76,6 +76,10 @@ endif
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.media_vol_steps=30
 
+ifeq ($(TARGET_DISABLES_GMS), true)
+$(call inherit-product, frameworks/base/data/sounds/AllAudio.mk)
+endif
+
 PRODUCT_COPY_FILES += \
     vendor/aospa/prebuilts/misc/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg
 
@@ -148,11 +152,14 @@ PRODUCT_PACKAGES += \
 
 # Google - GMS, Pixel, and Mainline Modules
 ifneq ($(TARGET_DISABLES_GMS), true)
+$(warning Building With GMS)
 $(call inherit-product, vendor/google/gms/config.mk)
 $(call inherit-product, vendor/google/pixel/config.mk)
 ifneq ($(TARGET_EXCLUDE_GMODULES), true)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules.mk)
 endif
+else
+$(warning Building Without GMS)
 endif
 
 # HIDL
