@@ -41,6 +41,18 @@ PRODUCT_PACKAGES += \
     Glimpse
 
 ifeq ($(TARGET_DISABLES_GMS), true)
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aospa/prebuilts/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aospa/prebuilts/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aospa/prebuilts/bin/50-aospa.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-aospa.sh
+ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
+PRODUCT_COPY_FILES += \
+    vendor/aospa/prebuilts/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/aospa/prebuilts/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/aospa/prebuilts/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+endif
+
 # Vanilla apps
 PRODUCT_PACKAGES += \
     AvatarPicker \
