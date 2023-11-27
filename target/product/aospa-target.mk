@@ -69,9 +69,11 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Audio
-# Increase volume level steps
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.config.media_vol_steps=30
+
+PRODUCT_COPY_FILES += \
+    vendor/aospa/prebuilts/misc/Effect_Tick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg
 
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
