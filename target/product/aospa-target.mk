@@ -33,6 +33,13 @@ $(call inherit-product, vendor/aospa/target/product/version.mk)
 # AOSPA private configuration - optional.
 $(call inherit-product-if-exists, vendor/aospa-priv/target/product/aospa-priv-target.mk)
 
+# Aperture
+PRODUCT_PACKAGES += \
+    Aperture
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.lineageos.aperture.dev
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
@@ -46,10 +53,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
-
-# Camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
 
 # curl
 PRODUCT_PACKAGES += \
