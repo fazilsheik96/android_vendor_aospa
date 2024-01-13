@@ -12,3 +12,6 @@ lineagehealth                               u:object_r:lineage_health_interface_
 
 # Lineage global actions
 lineageglobalactions                        u:object_r:lineage_globalactions_service:s0
+
+# App lock
+app_lock                                    u:object_r:app_lock_service:s0
