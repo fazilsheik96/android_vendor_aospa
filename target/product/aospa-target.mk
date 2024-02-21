@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.camera.privapp.list=org.lineageos.aperture.dev
 
+# Glimpse
+PRODUCT_PACKAGES += \
+    Glimpse
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
