@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
 # Boot Animation
 $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor_pixel
+
 # curl
 PRODUCT_PACKAGES += \
     curl
