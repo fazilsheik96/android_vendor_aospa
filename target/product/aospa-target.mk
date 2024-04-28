@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, packages/services/VncFlinger/product.mk)
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws \
+
 # APNs
 ifneq ($(TARGET_NO_TELEPHONY), true)
 PRODUCT_COPY_FILES += \
