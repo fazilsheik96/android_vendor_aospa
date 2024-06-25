@@ -15,43 +15,44 @@
 //
 
 prebuilt_etc {
-    name: "vendor_hentai_charger_res_images_battery_fail.png",
+    name: "product_hentai_charger_res_images_battery_fail.png",
     src: "images/charger/battery_fail.png",
     relative_install_path: "res/images/charger",
-    vendor: true,
+    product_specific: true,
     filename: "battery_fail.png",
 }
 
 prebuilt_etc {
-    name: "vendor_hentai_charger_res_images_battery_scale.png",
+    name: "product_hentai_charger_res_images_battery_scale.png",
     src: "images/charger/battery_scale.png",
     relative_install_path: "res/images/charger",
-    vendor: true,
+    product_specific: true,
     filename: "battery_scale.png",
 }
 
 prebuilt_etc {
-    name: "vendor_hentai_charger_res_images_main_font.png",
+    name: "product_hentai_charger_res_images_main_font.png",
     src: "images/charger/main_font.png",
     relative_install_path: "res/images/charger",
-    vendor: true,
+    product_specific: true,
     filename: "main_font.png",
 }
 
 prebuilt_etc {
-    name: "vendor_hentai_charger_res_values_animations.txt",
+    name: "product_hentai_charger_res_values_animations.txt",
     src: "values/charger/animation.txt",
     relative_install_path: "res/values/charger",
-    vendor: true,
+    product_specific: true,
     filename: "animation.txt",
 }
 
 phony {
-    name: "charger_res_images_vendor_pixel",
+    name: "charger_res_images_product_pixel",
+    product_specific: true,
     required: [
-        "vendor_hentai_charger_res_images_battery_fail.png",
-        "vendor_hentai_charger_res_images_battery_scale.png",
-        "vendor_hentai_charger_res_images_main_font.png",
-        "vendor_hentai_charger_res_values_animations.txt",
+        "product_hentai_charger_res_images_battery_fail.png",
+        "product_hentai_charger_res_images_battery_scale.png",
+        "product_hentai_charger_res_images_main_font.png",
+        "product_hentai_charger_res_values_animations.txt",
     ],
 }
