@@ -24,3 +24,6 @@ add_service(system_server, pih_manager_service);
 
 # App lock
 add_service(system_server, app_lock_service);
+
+# Freeform
+add_service(system_server, lmofreeform_service);
