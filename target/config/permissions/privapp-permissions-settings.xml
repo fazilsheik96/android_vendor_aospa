@@ -3,4 +3,8 @@
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.MANAGE_APP_LOCK" />
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="com.libremobileos.permission.START_FREEFORM"/>
+    </privapp-permissions>
 </permissions>

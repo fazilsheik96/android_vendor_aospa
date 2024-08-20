@@ -12,3 +12,6 @@ type lineage_globalactions_service, system_api_service, system_server_service, s
 
 # App lock
 type app_lock_service, system_api_service, system_server_service, service_manager_type;
+
+# Freeform
+type lmofreeform_service, system_api_service, system_server_service, service_manager_type;

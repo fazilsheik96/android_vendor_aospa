@@ -21,3 +21,6 @@ allow system_server zygote_tmpfs:file rw_file_perms;
 
 # App lock
 add_service(system_server, app_lock_service);
+
+# Freeform
+add_service(system_server, lmofreeform_service);
