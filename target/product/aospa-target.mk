@@ -51,12 +51,6 @@ $(call inherit-product, vendor/aospa/bootanimation/bootanimation.mk)
 PRODUCT_PACKAGES += \
     GoogleCameraGo
 
-# Chromium
-PRODUCT_PACKAGES += \
-    TrichromeLibrary \
-    TrichromeWebView \
-    TrichromeChrome
-
 # curl
 PRODUCT_PACKAGES += \
     curl
