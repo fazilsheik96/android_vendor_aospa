@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
     LatinIME
 endif
 
+# b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # LMOFreeform
 PRODUCT_PACKAGES += \
     LMOFreeform \
