@@ -6,5 +6,7 @@
 <manifest>
   <include name="common.xml" />
 
-  <project path="device/oneplus/oneplus7" name="AOSPA/android_device_oneplus_oneplus7" remote="aospa" revision="vauxite" />
+  <project path="device/oneplus/oneplus7" name="fazilsheik96/android_device_oneplus_oneplus7" remote="github" revision="vauxite" />
+  <project path="vendor/oneplus/oneplus7" name="proprietary_vendor_oneplus_oneplus7" remote="faiz" />
+
 </manifest>
