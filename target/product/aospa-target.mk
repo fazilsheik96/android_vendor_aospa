@@ -40,6 +40,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+ifeq ($(TARGET_DISABLES_GMS), true)
+# Vanilla apps
+PRODUCT_PACKAGES += \
+    Dialer \
+    Etar \
+    ExactCalculator \
+    Jelly \
+    LatinIME
+endif
+
 # LMOFreeform
 PRODUCT_PACKAGES += \
     LMOFreeform \
