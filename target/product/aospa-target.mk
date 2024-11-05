@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_DISABLES_GMS), true)
 # Vanilla apps
 PRODUCT_PACKAGES += \
+    AvatarPicker \
     Dialer \
     Etar \
     ExactCalculator \
