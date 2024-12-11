@@ -41,6 +41,9 @@ PRODUCT_PACKAGES += \
     Glimpse
 
 ifeq ($(TARGET_DISABLES_GMS), true)
+# Custom Clocks
+$(call inherit-product, vendor/SystemUIClocks/product.mk)
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aospa/prebuilts/bin/backuptool.sh:install/bin/backuptool.sh \
