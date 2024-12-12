@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Apps (Vanilla Build) -->
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/Camera2" />
+  <remove-project name="platform/packages/apps/Calendar" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/DevCamera" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <remove-project name="platform/packages/apps/Gallery" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/apps/Contacts" name="yaap/packages_apps_Contacts" remote="github" revision="fifteen" />
+  <project path="packages/apps/Dialer" name="yaap/packages_apps_Dialer" remote="github" revision="fifteen" />
+  <project path="packages/apps/DeskClock" name="yaap/packages_apps_DeskClock" remote="github" revision="fifteen" />
+  <project path="packages/apps/DocumentsUI" name="LineageOS/android_packages_apps_DocumentsUI" remote="github" revision="lineage-22.0" />
+  <project path="packages/apps/ExactCalculator" name="yaap/packages_apps_ExactCalculator" remote="github" revision="fifteen" />
+  <project path="packages/apps/Messaging" name="yaap/packages_apps_Messaging" remote="github" revision="fifteen" />
+  <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" remote="github" revision="lineage-22.0" />
+  <project path="packages/apps/SettingsIntelligence" name="LineageOS/android_packages_apps_SettingsIntelligence" remote="github" revision="lineage-22.0" />
+  <project path="packages/inputmethods/LatinIME" name="yaap/packages_inputmethods_LatinIME" remote="github" revision="fifteen" />
+
+  <!-- Calendar and dependencies -->
+  <remove-project name="platform/frameworks/opt/calendar" />
+  <remove-project name="platform/frameworks/opt/colorpicker" />
+  <remove-project name="platform/frameworks/opt/timezonepicker" />
+  <project path="frameworks/opt/calendar" name="LineageOS/android_frameworks_opt_calendar" remote="github" revision="lineage-22.0" />
+  <project path="frameworks/opt/colorpicker" name="LineageOS/android_frameworks_opt_colorpicker" remote="github" revision="lineage-22.0" />
+  <project path="frameworks/opt/timezonepicker" name="LineageOS/android_frameworks_opt_timezonepicker" remote="github" revision="lineage-22.0" />
+  <project path="packages/apps/Etar" name="LineageOS/android_packages_apps_Etar" remote="github" revision="lineage-22.0" />
+  
+</manifest>
