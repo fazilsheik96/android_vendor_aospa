@@ -6,5 +6,6 @@
 
     <privapp-permissions package="com.android.launcher3">
         <permission name="com.libremobileos.permission.START_FREEFORM"/>
+        <permission name="android.permission.ACCESS_CONTEXTUAL_SEARCH"/>
     </privapp-permissions>
 </permissions>
