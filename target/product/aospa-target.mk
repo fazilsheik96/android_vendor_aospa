@@ -40,6 +40,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Glimpse
 
+# Twelve
+PRODUCT_PACKAGES += \
+    Twelve
+
 ifeq ($(TARGET_DISABLES_GMS), true)
 # Custom Clocks
 $(call inherit-product, vendor/SystemUIClocks/product.mk)
